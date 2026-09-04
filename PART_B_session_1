@@ -1,0 +1,26 @@
+
+
+###Chosen formula: Running Total
+
+import numpy as np
+Example_Array = [0,4,8,25,3,17]
+total = 0
+for i in range (len(Example_Array)):
+  total += Example_Array[i]
+  print("Position:",i,"Value:",total)
+
+Numpy_Array = np.array(Example_Array)
+Numpy_Sum = np.sum(Numpy_Array)
+if total == Numpy_Sum:
+  print("They are the same value!")
+     
+Position: 0 Value: 0
+Position: 1 Value: 4
+Position: 2 Value: 12
+Position: 3 Value: 37
+Position: 4 Value: 40
+Position: 5 Value: 57
+They are the same value!
+
+
+     
